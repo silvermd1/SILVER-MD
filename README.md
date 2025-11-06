@@ -1,37 +1,49 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/mruniquehacker/Knightbot-md/main/logo.png" width="200"/>
-</p>
-
-<h1 align="center">SILVER-MD</h1>
+<h1 align="center">🤖 SILVER-MD</h1>
 
 <p align="center">
-  <b>Owner:</b> TALHA
+  <img src="https://cdn.vectorstock.com/i/1000x1000/79/63/silver-letter-md-metal-combination-alphabet-logo-vector-38797963.jpg" width="300" alt="SILVER-MD Logo"/>
 </p>
 
 <p align="center">
-  <a href="https://wa.me/923106367029" target="_blank">
-    <img src="https://img.shields.io/badge/Contact-WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="Contact"/>
-  </a>
-  <a href="https://github.com/TALHA/SILVER-MD" target="_blank">
-    <img src="https://img.shields.io/badge/Source-GitHub-0088cc?style=for-the-badge&logo=github&logoColor=white" alt="Source"/>
-  </a>
+  <b>A powerful and modern WhatsApp bot built using the Baileys library — helping admins manage groups efficiently.</b><br>
+  Includes features like tagging all members, muting/unmuting, auto-replies, and more.
 </p>
 
 ---
 
-## ⚡ Features
+## 🚀 Deployment Steps
 
-- 🚀 Fast and reliable  
-- 🛠️ Easy to use  
-- 🤖 Full WhatsApp Bot functionality  
-- 🎨 Customizable  
+### Step 1: Fork the Repository
+Click below to fork **SILVER-MD** to your own GitHub account:
+
+[![Fork Repository](https://img.shields.io/badge/FORK-Repository-blue?style=for-the-badge)](https://github.com/silvermd1/SILVER-MD/fork)
 
 ---
 
-## 💾 Installation
+### Step 2: Deploy the Bot
+Choose your preferred deployment method:
+
+[![Deploy on Replit](https://img.shields.io/badge/DEPLOY-on%20Replit-orange?style=for-the-badge&logo=replit)](https://replit.com/github/silvermd1/SILVER-MD)  
+[![Deploy on Codespaces](https://img.shields.io/badge/DEPLOY-on%20Codespaces-green?style=for-the-badge&logo=github)](https://github.com/codespaces/new?silvermd1/SILVER-MD)  
+[![Deploy on Panel](https://img.shields.io/badge/DEPLOY-on%20Panel-purple?style=for-the-badge)](https://github.com/silvermd1/SILVER-MD)
+
+---
+
+## 🧩 Features
+
+- 🔖 Tag all group members at once  
+- 🔇 Mute / unmute group chats  
+- 🤖 Auto-reply to specific commands  
+- 🔒 Admin-only controls  
+- ⚙️ Easy setup and deployment  
+- 💬 Multi-device support using Baileys  
+
+---
+
+## 🛠️ How to Run Locally
 
 ```bash
-git clone https://github.com/TALHA/SILVER-MD
+git clone https://github.com/silvermd1/SILVER-MD.git
 cd SILVER-MD
 npm install
-npm start
+node index.js
