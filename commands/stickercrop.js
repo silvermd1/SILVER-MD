@@ -170,20 +170,19 @@ async function stickercropCommand(sock, chatId, message) {
         // Get the final buffer with metadata
         const finalBuffer = await img.save(null);
 
-        // Send the sticker
-        await sock.sendMessage(chatId, { 
-            sticker: finalBuffer
-        },{ quoted: messageToQuote });
+// Send the sticker
+await sock.sendMessage(chatId, {
+    sticker: finalBuffer
+}, { quoted: messageToQuote });
 
-        // Cleanup temp files
-        try {
-            fs.unlinkSync(tempInput);
-            fs.unlinkSync(tempOutput);
-        } catch (err) {
-            console.error('Error cleaning up temp files:', err);
-        }
+// Cleanup temp files
+try {
+    fs.unlinkSync(tempInput);
+    fs.unlinkSync(tempOutput);
+} catch (err) {
+    console.error('Error cleaning up temp files:', err);
+}
 
-    } catch (error) {
         console.error('Error in stickercrop command:', error);
         await sock.sendMessage(chatId, { 
             text: 'Failed to crop sticker! Try with an image.',
