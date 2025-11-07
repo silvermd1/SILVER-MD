@@ -46,9 +46,10 @@ async function stickercropCommand(sock, chatId, message) {
     }
 
     try {
-        const mediaBuffer = await downloadMediaMessage(targetMessage, 'buffer', {}, { 
-            logger: undefined, SILVER
-            reuploadRequest: sock.updateMediaMessage 
+        const mediaBuffer = await downloadMediaMessage(targetMessage, 'buffer', {}, {
+  logger: undefined,
+  reuploadRequest: sock.updateMediaMessage
+});
         });
 
         if (!mediaBuffer) {
