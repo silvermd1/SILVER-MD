@@ -51,7 +51,11 @@ async function stickercropCommand(sock, chatId, message) {
   reuploadRequest: sock.updateMediaMessage
 });
         });
-
+} catch (err) {
+    console.error(err);
+    await sock.sendMessage(chatId, { text: 'Error downloading media.' });
+    return;
+}
         if (!mediaBuffer) {
             await sock.sendMessage(chatId, { 
                 text: 'Failed to download media. Please try again.',
