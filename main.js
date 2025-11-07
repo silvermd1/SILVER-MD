@@ -414,3 +414,11 @@ async function handleMessages(sock, messageUpdate, printLog) {
                 break;
             case userMessage.startsWith('.mode'):
                 // Check if sender
+        break;
+    }
+} catch (err) {
+    console.error(err);
+}
+};
+
+module.exports = main;
